@@ -190,7 +190,7 @@ bool Power::isSupportedGovernor() {
         buf = android::base::Trim(buf);
     }
     // Only support EAS 1.2, legacy EAS and HMP
-    if (buf == SCHEDUTIL_GOVERNOR || buf == HELIX_SCHEDUTIL_GOVERNOR || buf == SCHEDALUCARD_GOVERNOR || buf == BLU_SCHEDUTIL_GOVERNOR || buf == ELECTROUTIL_GOVERNOR || buf == DARKNESSSCHED_GOVERNOR || buf == INTERACTIVE_GOVERNOR || buf == ALUCARD_GOVERNOR || buf == BLU_ACTIVE_GOVERNOR || buf == CHILL_GOVERNOR || buf == CONSERVATIVE_GOVERNOR || buf == CULTIVATION_GOVERNOR || buf == DARKNESS_GOVERNOR || buf == ONDEMAND_GOVERNOR || buf == IMPULSE_GOVERNOR || buf == TRIPNDROID_GOVERNOR || buf == ZZMOOVE_GOVERNOR) {
+    if (buf == SCHEDUTIL_GOVERNOR || buf == HELIX_SCHEDUTIL_GOVERNOR || buf == SCHEDALUCARD_GOVERNOR || buf == BLU_SCHEDUTIL_GOVERNOR || buf == ELECTROUTIL_GOVERNOR || buf == DARKNESSSCHED_GOVERNOR || buf == INTERACTIVE_GOVERNOR || buf == ALUCARD_GOVERNOR || buf == BLU_ACTIVE_GOVERNOR || buf == CHILL_GOVERNOR || buf == CONSERVATIVE_GOVERNOR || buf == CULTIVATION_GOVERNOR || buf == DARKNESS_GOVERNOR || buf == ONDEMAND_GOVERNOR || buf == IMPULSE_GOVERNOR || buf == TRIPNDROID_GOVERNOR || buf == ZZMOOVE_GOVERNOR) || buf == DARKUTIL_GOVERNOR) {
         return true;
     } else {
         ALOGE("Governor not supported by powerHAL, skipping");

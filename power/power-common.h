@@ -51,7 +51,7 @@
 #define IMPULSE_GOVERNOR "impulse"
 #define TRIPNDROID_GOVERNOR "tripndroid"
 #define ZZMOOVE_GOVERNOR "zzmoove"
-
+#define DARKUTIL_GOVERNOR "darkutil"
 
 #define MSMDCVS_GOVERNOR "msm-dcvs"
 
